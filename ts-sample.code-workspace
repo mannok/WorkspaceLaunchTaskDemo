@@ -1,15 +1,4 @@
 {
-	"settings": {
-		"editor.insertSpaces": false,
-		"editor.tabSize": 2,
-		"editor.codeActionsOnSave": {
-			"source.fixAll.eslint": true
-		},
-		"eslint.validate": [
-			"javascript",
-			"typescript"
-		]
-	},
 	"launch": {
 		"version": "0.2.0",
 		"configurations": [
@@ -20,9 +9,8 @@
 				"skipFiles": [
 					"<node_internals>/**"
 				],
-				"program": "${workspaceFolder}/index.ts",
-				"preLaunchTask": "buildfordebug",
-				"outFiles": ["${workspaceFolder}/out/**/*.js"]
+				"program": "${workspaceFolder}/index.js",
+				"preLaunchTask": "nodeversion"
 			}
 		]
 	},
@@ -30,15 +18,9 @@
 		"version": "2.0.0",
 		"tasks": [
 			{
-				"label": "buildfordebug",
-				"group": "build",
+				"label": "nodeversion",
 				"type": "npm",
-				"script": "buildfordebug",
-				"presentation": {
-					"reveal": "silent",
-					"panel": "new"
-				},
-				"problemMatcher": ["$tsc"]
+				"script": "nodeversion",
 			}
 		]
 	},

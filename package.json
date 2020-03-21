@@ -3,20 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "@vue/reactivity": "^3.0.0-alpha.9",
-    "axios": "^0.19.2",
-    "https-proxy-agent": "^5.0.0",
-    "moment": "^2.24.0"
-  },
-  "devDependencies": {
-    "ts-node": "^8.6.2",
-    "typescript": "^3.8.3"
-  },
   "scripts": {
-    "start": "ts-node .\\index.ts",
-    "buildfordebug": "tsc --project ./tsconfig.json --outDir ./out",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "nodeversion": "node -v"
   },
   "author": "",
   "license": "ISC"
