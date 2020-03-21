@@ -1,0 +1,32 @@
+{
+  "name": "ts-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@vue/reactivity": "^3.0.0-alpha.9",
+    "axios": "^0.19.2",
+    "https-proxy-agent": "^5.0.0",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.9.0",
+    "@typescript-eslint/eslint-plugin": "^2.23.0",
+    "@typescript-eslint/parser": "^2.23.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "start": "ts-node .\\index.ts",
+    "buildfordebug": "tsc --project ./tsconfig.json --outDir ./out",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
